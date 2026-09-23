@@ -1,0 +1,56 @@
+
+
+  .container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 10px;
+    
+}  
+
+
+
+ label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.message {
+    color: pink;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+} 
+
+
+
+
+
+
+ #myImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+} 
+

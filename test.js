@@ -180,136 +180,211 @@
 
 
 // ex1: تعريف المنيو والدالة
-const menu = [
-  {
-    name: "mashawi",
-    price: 9.99,
-    category: "Main Course",
-    available: true
-  },
-  {
-    name: "Shawerma",
-    price: 12.50,
-    category: "Main Course",
-    available: true
-  },
-  {
-    name: "salad",
-    price: 7.25,
-    category: "Appetizers",
-    available: false
-  },
-  {
-    name: "French Fries",
-    price: 3.50,
-    category: "Sides",
-    available: true
-  },
-  {
-    name: "Chocolate Lava Cake",
-    price: 6.00,
-    category: "Desserts",
-    available: true
-  }
-];
+// const menu = [
+//   {
+//     name: "mashawi",
+//     price: 9.99,
+//     category: "Main Course",
+//     available: true
+//   },
+//   {
+//     name: "Shawerma",
+//     price: 12.50,
+//     category: "Main Course",
+//     available: true
+//   },
+//   {
+//     name: "salad",
+//     price: 7.25,
+//     category: "Appetizers",
+//     available: false
+//   },
+//   {
+//     name: "French Fries",
+//     price: 3.50,
+//     category: "Sides",
+//     available: true
+//   },
+//   {
+//     name: "Chocolate Lava Cake",
+//     price: 6.00,
+//     category: "Desserts",
+//     available: true
+//   }
+// ];
 
-function showMenu() {
-  for (let i = 0; i < menu.length; i++) {
-    console.log(menu[i].name, menu[i].price);
-  }
-}
+// function showMenu() {
+//   for (let i = 0; i < menu.length; i++) {
+//     console.log(menu[i].name, menu[i].price);
+//   }
+// }
 
-showMenu();
+// showMenu();
 
 
-// ex2 & ex3
-let selectedFood = null;
+// // ex2 & ex3
+// let selectedFood = null;
 
-while (true) {
-  let foodName = prompt("Enter food name: ");
+// while (true) {
+//   let foodName = prompt("Enter food name: ");
 
-  for (let i = 0; i < menu.length; i++) {
-    // 5. Use continue to skip unavailable food items
-    if (menu[i].available === false) {
-      continue;
-    }
+//   for (let i = 0; i < menu.length; i++) {
+//     // 5. Use continue to skip unavailable food items
+//     if (menu[i].available === false) {
+//       continue;
+//     }
 
    
-    if (menu[i].name.toLowerCase() === foodName.toLowerCase()) {
-      selectedFood = menu[i];
-      break; 
-    }
-  }
+//     if (menu[i].name.toLowerCase() === foodName.toLowerCase()) {
+//       selectedFood = menu[i];
+//       break; 
+//     }
+//   }
 
-  // stop if food exixt
-  if (selectedFood !== null) {
-    break;
-  }
-}
+//   // stop the main 
+//   if (selectedFood !== null) {
+//     break;
+//   }
+// }
 
-// use for in for selected food
-for (let key in selectedFood) {
-  console.log(key + ": " + selectedFood[key]);
-} 
+// // consloe log propirities object
+// for (let key in selectedFood) {
+//   console.log(key + ": " + selectedFood[key]);
+// } 
  
 
-document.write("<h2>Order Details:</h2>");
+// document.write("<h2>Order Details:</h2>");
 
-for (let key in selectedFood) {
-  document.write(key + ": " + selectedFood[key] + "<br>");
-}
-
-
-
-
-//function task 
+// for (let key in selectedFood) {
+//   document.write(key + ": " + selectedFood[key] + "<br>");
+// }
 
 
 
-// function 1:
-function reverse (){
-    let number= prompt("plz,insert 5 digit numbers");
-    for(let i = number.length - 1; i >= 0; i--){
-    console.log(number[i]);
-    }
-}reverse();
 
-// function 2:
-for(let j = 0; j<= 15 ; j++ ){
-    if(j % 2 == 0){
-        console.log(j + " is even");
-    }
-
-    else{
-        console.log(j + " is odd");
-    }
-}
-
-// function 3:
-let num = prompt("Enter a number: (6 digits)"); 
-let result = ""; 
-
-for (let i = 0; i < num.length; i++) {
-
-    result = result + num[i]; 
+// //function task 
 
 
-    if (num[i] % 2 === 0 && num[i + 1] % 2 === 0) {
-        result = result + "-"; 
-    }
-}
-console.log(result);
+
+// // function 1:
+// function reverse (){
+//     let number= prompt("plz,insert 5 digit numbers");
+//     let z ="";
+//     for(let i = number.length - 1; i >= 0; i--){
+// z+=number[i];
+//    // document.write(number[i]);
+//     }
+
+//     console.log(z)
+// }reverse();
+
+// // function 2:
+// for(let j = 0; j<= 15 ; j++ ){
+//     if(j % 2 == 0){
+//         console.log(j + " is even");
+//     }
+
+//     else{
+//         console.log(j + " is odd");
+//     }
+// }
+
+// // function 3:
+// let num = prompt("Enter a number: (6 digits)"); 
+// let result = ""; 
+
+// for (let i = 0; i < num.length; i++) {
+
+//     result = result + num[i]; 
 
 
-// function 4:
-function Agechecker(){
-    let age = prompt("plz,enter your age : ");
-    if(age >= 18){
-        console.log("The user is Adult");
-    }
-    else {
-        console.log("The user is Minor");
-    }
-}
-Agechecker();
+//     if (num[i] % 2 === 0 && num[i + 1] % 2 === 0) {
+//         result = result + "-"; 
+//     }
+// }
+// console.log(result);
+
+
+// // function 4:
+// function Agechecker(){
+//     let age = prompt("plz,enter your age : ");
+//     if(age >= 18){
+//         console.log("The user is Adult");
+//     }
+//     else {
+//         console.log("The user is Minor");
+//     }
+// }
+// Agechecker();
  
+
+
+
+
+
+// TASK3 
+
+
+// getElementById()
+let nameInput = document.getElementById("customerName");
+let orderSelect = document.getElementById("order");
+let result = document.getElementById("result");
+
+// getElementsByTagName()
+let buttons = document.getElementsByTagName("button");
+
+// getElementsByClassName()
+let messages = document.getElementsByClassName("message");
+
+// querySelector()
+let submitButton = document.querySelector("#submitBtn");
+
+
+// Display the order
+function displayOrder() {
+
+    let name = nameInput.value;
+    let order = orderSelect.value;
+
+    result.innerText = "Hello " + name + "! Your order is " + order + ".";
+}
+
+
+// onmouseover
+function changeColor() {
+    submitButton.style.backgroundColor = "pink";
+}
+
+
+// onmouseout
+function returnColor() {
+    submitButton.style.backgroundColor = "black";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Q image
+ let image = document.getElementById("myImage");
+
+function makeCircle() {
+    image.style.borderRadius = "50%";
+}
+
+function makeSquare() {
+    image.style.borderRadius = "0";
+ }
+
+
+
+
+
