@@ -179,7 +179,7 @@
 // // // ex4
 
 
-// ex1: تعريف المنيو والدالة
+// ex1: 
 // const menu = [
 //   {
 //     name: "mashawi",
@@ -377,7 +377,7 @@ function returnColor() {
 
 
 //vedios
-// let textBox = document.getElementById("textBox");s
+let textBox = document.getElementById("textBox");
 // 1. changeFontFamily()
 function changeFontFamily() {
     let fontFamilySelect = document.getElementById("fontFamily");

@@ -15,29 +15,36 @@
 
         <h1>Restaurant Ordering System</h1>
 
-        <label for="customerName">Customer Name</label>
-        <input type="text" id="customerName" placeholder="Enter your name">
-
-        <label for="order">Choose Your Order</label>
-        <select id="order">
-            <option value="Burger">Burger</option>
-            <option value="Shawarma">Shawarma</option>
-            <option value="Zinger">Zinger</option>
-        </select>
-
-        <button
-            id="submitBtn"
-            onclick="displayOrder()"
-            onmouseover="changeColor()"
-            onmouseout="returnColor()">
-            Submit
-        </button>
+        
 
         <p id="result" class="message"></p>
 
     </div>
 
+<div class="container">
+        <!-- (Font Family) -->
+        <select id="fontFamily" onchange="changeFontFamily()">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Fantasy">Fantasy</option>
+        </select>
 
+        <!-- (Font Size) -->
+        <select id="fontSize" onchange="changeFontSize()">
+            <option value="10px">10px</option>
+            <option value="15px">15px</option>
+            <option value="20px">25px</option>
+        </select>
+
+        <!-- Checkbox  -->
+        <label><input type="checkbox" id="italicCheck" onclick="toggleItalic()"> Italic</label>
+        <label><input type="checkbox" id="boldCheck" onclick="toggleBold()"> Bold</label>
+        <label><input type="checkbox" id="underlineCheck" onclick="toggleUnderline()"> Underline</label>
+
+        
+        </div><br><br>
+        <!-- box -->
+        <textarea id="textBox" rows="4" cols="55">the quick brown fox over the lazy dog</textarea><br><br><br><br>
 
    
 
